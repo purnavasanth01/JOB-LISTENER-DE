@@ -1,0 +1,64 @@
+name: listen-de
+
+# German student-job listener (materials science).
+# Primary trigger: cron-job.org calls the workflow_dispatch API every 3 minutes (same setup as the US listener).
+# The schedule below is only a backup in case cron-job.org stops (GitHub cron is often late).
+# Separate repo, separate state branch and separate notification list from the US listener.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+# Never run two checks at once.
+concurrency:
+  group: listener-de
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install web push library (JOB_APP notifications)
+        run: pip install --quiet -r requirements.txt
+
+      - name: Load state (state branch)
+        env:
+          REPO_URL: https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+        run: |
+          if git ls-remote --exit-code --heads origin state > /dev/null 2>&1; then
+            git clone --quiet --depth 1 --branch state "$REPO_URL" state
+          else
+            mkdir -p state && echo "no state branch yet: first run will fill the dashboard silently"
+          fi
+
+      - name: Run listener
+        env:
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python main.py --state-dir state
+
+      - name: Save state
+        if: success()
+        env:
+          REPO_URL: https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+        run: |
+          cd state
+          if [ ! -d .git ]; then git init --quiet -b state && git remote add origin "$REPO_URL"; fi
+          git config user.name "job-listener-de-bot"
+          git config user.email "job-listener-de-bot@users.noreply.github.com"
+          # one orphan commit, force-pushed: history never grows
+          git checkout --quiet --orphan next
+          git add -A
+          git commit --quiet -m "state $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          for i in 1 2 3; do git push --quiet --force origin HEAD:state && break; sleep 5; done

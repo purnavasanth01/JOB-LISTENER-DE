@@ -1,0 +1,430 @@
+{
+ "companies": [
+  {
+   "name": "BMW Group",
+   "rank": 1,
+   "autostar": true,
+   "aliases": [
+    "BMW"
+   ]
+  },
+  {
+   "name": "Fraunhofer-Gesellschaft",
+   "rank": 2,
+   "autostar": true,
+   "aliases": [
+    "Fraunhofer"
+   ]
+  },
+  {
+   "name": "MTU Aero Engines",
+   "rank": 3,
+   "autostar": true
+  },
+  {
+   "name": "Robert Bosch",
+   "rank": 4,
+   "autostar": true,
+   "aliases": [
+    "Bosch",
+    "Bosch Group"
+   ],
+   "sources": [
+    {
+     "type": "smartrecruiters",
+     "company": "BoschGroup"
+    }
+   ]
+  },
+  {
+   "name": "Diehl",
+   "rank": 5,
+   "autostar": true
+  },
+  {
+   "name": "Schaeffler",
+   "rank": 6,
+   "autostar": true,
+   "aliases": [
+    "Vitesco"
+   ]
+  },
+  {
+   "name": "Airbus",
+   "rank": 7,
+   "autostar": true,
+   "aliases": [
+    "Airbus Defence and Space",
+    "Airbus Helicopters"
+   ],
+   "sources": [
+    {
+     "type": "workday",
+     "host": "ag.wd3.myworkdayjobs.com",
+     "tenant": "ag",
+     "site": "Airbus"
+    }
+   ]
+  },
+  {
+   "name": "ZEISS",
+   "rank": 8,
+   "autostar": true,
+   "aliases": [
+    "Carl Zeiss"
+   ]
+  },
+  {
+   "name": "MAHLE",
+   "rank": 9,
+   "autostar": true
+  },
+  {
+   "name": "Lufthansa Technik",
+   "rank": 10,
+   "autostar": true
+  },
+  {
+   "name": "KIT",
+   "rank": 11,
+   "autostar": false,
+   "aliases": [
+    "Karlsruher Institut für Technologie"
+   ]
+  },
+  {
+   "name": "TU Darmstadt",
+   "rank": 12,
+   "autostar": false
+  },
+  {
+   "name": "Infineon",
+   "rank": 13,
+   "autostar": false
+  },
+  {
+   "name": "BAM",
+   "rank": 14,
+   "autostar": false
+  },
+  {
+   "name": "Henkel",
+   "rank": 15,
+   "autostar": false,
+   "aliases": [
+    "Henkel AG"
+   ]
+  },
+  {
+   "name": "Siemens Energy",
+   "rank": 16,
+   "autostar": false
+  },
+  {
+   "name": "thyssenkrupp",
+   "rank": 17,
+   "autostar": false,
+   "aliases": [
+    "thyssenkrupp Steel",
+    "rothe erde"
+   ]
+  },
+  {
+   "name": "IKV Aachen",
+   "rank": 18,
+   "autostar": false
+  },
+  {
+   "name": "Porsche",
+   "rank": 19,
+   "autostar": false
+  },
+  {
+   "name": "Mercedes-Benz",
+   "rank": 20,
+   "autostar": false,
+   "aliases": [
+    "Mercedes",
+    "Daimler"
+   ]
+  },
+  {
+   "name": "Volkswagen Group",
+   "rank": 21,
+   "autostar": false,
+   "aliases": [
+    "Volkswagen",
+    "VW",
+    "PowerCo"
+   ]
+  },
+  {
+   "name": "Audi",
+   "rank": 22,
+   "autostar": false
+  },
+  {
+   "name": "BASF",
+   "rank": 23,
+   "autostar": false
+  },
+  {
+   "name": "3M",
+   "rank": 24,
+   "autostar": false,
+   "sources": [
+    {
+     "type": "workday",
+     "host": "3m.wd1.myworkdayjobs.com",
+     "tenant": "3m",
+     "site": "Search"
+    }
+   ]
+  },
+  {
+   "name": "tesa",
+   "rank": 25,
+   "autostar": false
+  },
+  {
+   "name": "Wacker Chemie",
+   "rank": 26,
+   "autostar": false,
+   "aliases": [
+    "Wacker"
+   ]
+  },
+  {
+   "name": "Schott",
+   "rank": 27,
+   "autostar": false
+  },
+  {
+   "name": "SurTec Group",
+   "rank": 28,
+   "autostar": false
+  },
+  {
+   "name": "Atotech",
+   "rank": 29,
+   "autostar": false,
+   "aliases": [
+    "MKS"
+   ]
+  },
+  {
+   "name": "B. Braun",
+   "rank": 30,
+   "autostar": false
+  },
+  {
+   "name": "Forschungszentrum Jülich",
+   "rank": 31,
+   "autostar": false,
+   "aliases": [
+    "Juelich",
+    "FZ Jülich"
+   ],
+   "sources": [
+    {
+     "type": "softgarden",
+     "host": "fz-juelich.career.softgarden.de"
+    }
+   ]
+  },
+  {
+   "name": "DLR",
+   "rank": 32,
+   "autostar": false
+  },
+  {
+   "name": "Forvia HELLA",
+   "rank": 33,
+   "autostar": false,
+   "aliases": [
+    "Hella",
+    "Forvia"
+   ]
+  },
+  {
+   "name": "Voith",
+   "rank": 34,
+   "autostar": false
+  },
+  {
+   "name": "Merck KGaA",
+   "rank": 35,
+   "autostar": false
+  },
+  {
+   "name": "Evonik",
+   "rank": 36,
+   "autostar": false
+  },
+  {
+   "name": "GMH Gruppe",
+   "rank": 37,
+   "autostar": false
+  },
+  {
+   "name": "VDM Metals",
+   "rank": 38,
+   "autostar": false
+  },
+  {
+   "name": "CeramTec",
+   "rank": 39,
+   "autostar": false
+  },
+  {
+   "name": "Salzgitter AG",
+   "rank": 40,
+   "autostar": false
+  },
+  {
+   "name": "ZF Friedrichshafen",
+   "rank": 41,
+   "autostar": false
+  },
+  {
+   "name": "Continental",
+   "rank": 42,
+   "autostar": false,
+   "sources": [
+    {
+     "type": "smartrecruiters",
+     "company": "Continental"
+    }
+   ]
+  },
+  {
+   "name": "Siemens AG",
+   "rank": 43,
+   "autostar": false,
+   "aliases": [
+    "Siemens"
+   ]
+  },
+  {
+   "name": "OHB System",
+   "rank": 44,
+   "autostar": false
+  },
+  {
+   "name": "Helmholtz-Zentrum Berlin",
+   "rank": 45,
+   "autostar": false
+  },
+  {
+   "name": "Max Planck institutes",
+   "rank": 46,
+   "autostar": false,
+   "aliases": [
+    "Max Planck",
+    "Max-Planck-Gesellschaft"
+   ],
+   "sources": [
+    {
+     "type": "rss",
+     "url": "https://www.mpg.de/feeds/jobs.rss"
+    }
+   ]
+  },
+  {
+   "name": "Hereon",
+   "rank": 47,
+   "autostar": false
+  },
+  {
+   "name": "HZDR",
+   "rank": 48,
+   "autostar": false
+  },
+  {
+   "name": "Brose",
+   "rank": 49,
+   "autostar": false
+  },
+  {
+   "name": "Karl Storz",
+   "rank": 50,
+   "autostar": false
+  },
+  {
+   "name": "Schunk",
+   "rank": 51,
+   "autostar": false
+  },
+  {
+   "name": "Saint-Gobain",
+   "rank": 52,
+   "autostar": false
+  },
+  {
+   "name": "Aurubis",
+   "rank": 53,
+   "autostar": false
+  },
+  {
+   "name": "TÜV Rheinland",
+   "rank": 54,
+   "autostar": false
+  },
+  {
+   "name": "Arburg",
+   "rank": 55,
+   "autostar": false
+  },
+  {
+   "name": "Materion",
+   "rank": 56,
+   "autostar": false
+  },
+  {
+   "name": "Walter Tools",
+   "rank": 57,
+   "autostar": false
+  },
+  {
+   "name": "Eberspächer",
+   "rank": 58,
+   "autostar": false
+  },
+  {
+   "name": "Kautex Textron",
+   "rank": 59,
+   "autostar": false
+  },
+  {
+   "name": "Dow",
+   "rank": 60,
+   "autostar": false,
+   "sources": [
+    {
+     "type": "workday",
+     "host": "dow.wd1.myworkdayjobs.com",
+     "tenant": "dow",
+     "site": "externalcareers"
+    }
+   ]
+  },
+  {
+   "name": "Heraeus",
+   "rank": 61,
+   "autostar": false
+  },
+  {
+   "name": "Valeo",
+   "rank": 62,
+   "autostar": false,
+   "sources": [
+    {
+     "type": "workday",
+     "host": "valeo.wd3.myworkdayjobs.com",
+     "tenant": "valeo",
+     "site": "valeo_jobs"
+    }
+   ]
+  }
+ ]
+}
